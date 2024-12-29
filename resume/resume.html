@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dashboard/dashboard.css">
     <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="show.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- copilot -->
     <title>وب سایت کاریابی</title>
     <div id="header">
@@ -20,7 +23,16 @@
 <body>
     <div id="wrap">
         <div id="content">
-            
+            <div class="results-container">
+                <a href="show.html" class="result-box">
+                    <i class="fas fa-book"></i>
+                    <h3>نمایش رزومه</h3>
+                </a>
+                <a href="create.html" class="result-box">
+                    <i class="fas fa-edit"></i>
+                    <h3>ویرایش رزومه</h3>
+                </a>
+            </div>   
         </div>
         <div id="sidebar"> <!-- https://freefrontend.com/ -->
             <div id="nav-bar"><input id="nav-toggle" type="checkbox"/>
@@ -29,10 +41,10 @@
                     <hr/>
                 </div>
                 <div id="nav-content">
-                    <div class="nav-button"><i class="fas fa-home"></i><a id="profilelink" href="../main/main.html"><span>صفحه اصلی</span></a></div>
-                    <div class="nav-button"><i class="fas fa-list"></i><a id="resumelink" href="../resume/resume.html"><span>رزومه</span></a></div>
-                    <div class="nav-button"><i class="fas fa-calendar"></i><a id="adslink" href="../ads/ads.html"><span>آگهی ها</span></a></div>
-                    <div class="nav-button"><i class="fas fa-eye"></i><a id="resultlink" href="../result/result.html"><span>نتایج</span></a></div>
+                    <a id="profilelink" href="../main/main.html"><div class="nav-button"><i class="fas fa-home"></i><span>صفحه اصلی</span></div></a>
+                    <a id="resumelink" href="../resume/resume.html"><div class="nav-button"><i class="fas fa-list"></i><span>رزومه</span></div></a>
+                    <a id="adslink" href="../ads/ads.html"><div class="nav-button"><i class="fas fa-calendar"></i><span>آگهی ها</span></div></a>
+                    <a id="resultlink" href="../result/result.html"><div class="nav-button"><i class="fas fa-eye"></i><span>نتایج</span></div></a>
                     <hr/>
                     <div class="nav-button"><i class="fas fa-arrow-circle-right"></i><span>خروج</span></div>
                 </div>

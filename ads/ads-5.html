@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="details-container"> 
+        
+        <img src="ads5.jpg" alt="Details Image">
+         <b>عنوان شغلی: ادمین اینستاگرام</b>
+         <p>شرکت درخواست دهنده: پیج شخصی</p>
+         <p>مهارت های مورد نیاز: اشنایی با مباحث طراحی وب</p>
+         <p>حقوق پیشنهادی: بازه 10-20 میلیون تومان</p>
+         <p>مزایا همکاری: بیمه و افزایش  حقوق</p>
+     </div>
+     <div id="main"> 
+        <div class="job-post">
+           <button onclick="showForm()">ارسال رزومه</button>
+            <div id="resumeForm" class="form-container">
+               <form action="submit_resume.php" method="post" enctype="multipart/form-data"> 
+               <label for="name">نام:</label>
+               <input type="text" id="name" name="name" required> 
+               <label for="file">بارگذاری فایل رزومه:</label> 
+               <input type="file" id="file" name="file" required> 
+               <button type="submit">send</button>
+               </form> </div> </div> <div class="chat-container"> 
+               <h4>چت با کارفرما</h4>
+                   <div class="chat-box" id="chatBox"></div> 
+                       <input type="text" id="messageInput" placeholder="پیام خود را بنویسید...">
+                       <button onclick="sendMessage()">sendMessage</button>
+                   </div> 
+            </div> 
+       </div>
+   </div>
+</body>
+</html>

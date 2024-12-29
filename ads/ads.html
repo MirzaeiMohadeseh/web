@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../ads/ads.css">
+    <link rel="stylesheet" href="../dashboard/dashboard.css">
+    <link rel="stylesheet" href="ads.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- copilot -->
     <title>وب سایت کاریابی</title>
     <div id="header">
@@ -20,7 +21,48 @@
 <body>
     <div id="wrap">
         <div id="content">
-            
+    <div class="container"> 
+        <div class="card"> 
+             <img src="ads1.png" alt="Image 1" class="card-img">
+             <a href="ads-1.html" class="card-title">کارآموزی شرکت همراه اول</a>
+             <h3 class="card-title">به صورت پاره وقت</h3> 
+             <h3 class="card-title">Title 3</h3>
+        </div> 
+       <div class="card"> 
+             <img src="ads2.png" alt="Image 1" class="card-img">
+             <a href="ads-2.html" class="card-title">کارآموزی شرکت اسنپ</a>
+             <h3 class="card-title">به صورت دورکاری</h3> 
+             <h3 class="card-title">حقوق 10-20 میلیون تومان</h3>
+        </div> 
+        <div class="card"> 
+            <img src="ads3.png" alt="Image 1" class="card-img">
+            <a href="ads-3.html" class="card-title">کارآموزی شرکت تپسی</a>
+            <h3 class="card-title">تمام وقت</h3> 
+            <h3 class="card-title">حقوق 10-20 میلیون تومان</h3>
+       </div> 
+      </div>
+      <div class="container"> 
+        <div class="card"> 
+            <img src="ads4.png" alt="Image 1" class="card-img">
+            <a href="ads-4.html" class="card-title">کارآموزی شرکت ایرانسل</a>
+            <h3 class="card-title">تمام وقت</h3> 
+            <h3 class="card-title">حقوق 10-20 میلیون تومان</h3>
+       </div> 
+      <div class="card"> 
+            <img src="ads5.jpg" alt="Image 1" class="card-img">
+            <a href="ads-5.html" class="card-title">ادمین اینستاگرام</a>
+            <h3 class="card-title">کار در منزل</h3> 
+            <h3 class="card-title">حقوق 10-15 میلیون تومان</h3>
+       </div> 
+       <div class="card"> 
+           <img src="ads6.png" alt="Image 1" class="card-img">
+           <a href="ads-6.html" class="card-title">کارآموزی جاوا</a>
+           <h3 class="card-title">پاره وقت</h3> 
+           <h3 class="card-title">حقوق 25-20 میلیون تومان</h3>
+      </div> 
+        </div>
+      
+    </div>
         </div>
         <div id="sidebar"> <!-- https://freefrontend.com/ -->
             <div id="nav-bar"><input id="nav-toggle" type="checkbox"/>
@@ -29,10 +71,10 @@
                     <hr/>
                 </div>
                 <div id="nav-content">
-                    <div class="nav-button"><i class="fas fa-home"></i><a id="profilelink" href="../main/main.html"><span>صفحه اصلی</span></a></div>
-                    <div class="nav-button"><i class="fas fa-list"></i><a id="resumelink" href="../resume/resume.html"><span>رزومه</span></a></div>
-                    <div class="nav-button"><i class="fas fa-calendar"></i><a id="adslink" href="../ads/ads.html"><span>آگهی ها</span></a></div>
-                    <div class="nav-button"><i class="fas fa-eye"></i><a id="resultlink" href="../result/result.html"><span>نتایج</span></a></div>
+                    <a id="profilelink" href="../main/main.html"><div class="nav-button"><i class="fas fa-home"></i><span>صفحه اصلی</span></div></a>
+                    <a id="resumelink" href="../resume/resume.html"><div class="nav-button"><i class="fas fa-list"></i><span>رزومه</span></div></a>
+                    <a id="adslink" href="../ads/ads.html"><div class="nav-button"><i class="fas fa-calendar"></i><span>آگهی ها</span></div></a>
+                    <a id="resultlink" href="../result/result.html"><div class="nav-button"><i class="fas fa-eye"></i><span>نتایج</span></div></a>
                     <hr/>
                     <div class="nav-button"><i class="fas fa-arrow-circle-right"></i><span>خروج</span></div>
                 </div>
@@ -42,3 +84,79 @@
     </script>
 </body>
 </html>
+   
+   <!----
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قالب رزومه</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>فرم بارگذاری آگهی شغلی</h2>
+        <form>
+            <label for="jobTitle">اسم آگهی:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+
+            <label for="cityName">نام شهر:</label>
+            <input type="text" id="cityName" name="cityName" required>
+
+            <label for="address">آدرس:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="salary">حقوق پیشنهادی:</label>
+            <input type="number" id="salary" name="salary" required>
+
+            <button type="submit">ارسال</button>
+        </form>
+    </div>
+    
+
+</body>
+</html>
+
