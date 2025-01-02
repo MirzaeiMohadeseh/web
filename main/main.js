@@ -1,5 +1,3 @@
-// document.querySelectorAll('.icon-btn').forEach(button => {
-//     button.addEventListener('click', () => {
-//         alert('آیکون کلیک شد!');
-//     });
-// });
+document.getElementById('logout-btn').addEventListener('click', function() {
+    window.location.href = '../karyabi/karyabi.html';
+});

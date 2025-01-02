@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>وب سایت کاریابی</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+            <div id="cir1"></div>
+            <div id="cir2"></div>
+            <div class="wrapper">
+                <form id="loginForm">
+                    <h2> ورود به سایت</h2>
+                    <div class="input-field">
+                        <input type="text" id="username" required>
+                        <label>نام کاربری</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" required>
+                        <label>رمز عبور</label>
+                    </div>
+                    <div class="forget">
+                        <label for="remember">
+                            <input type="checkbox" id="remember">
+                            <p>من را به خاطر بسپار</p>
+                        </label>
+                        <a href="#">رمز را فراموش کردید؟</a>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="employer" >ورود کارفرمایان</button>
+                        <button type="button" class="jobseeker" onclick="validateForm('../main/main.html')">ورود کارجویان</button>
+                    </div>
+                    <div class="register">
+                        <p>اکانت ندارید؟ <a href="#">ثبت نام</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../main/main.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

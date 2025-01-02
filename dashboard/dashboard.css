@@ -1,6 +1,7 @@
 #wrap{
     display: flex;
 }
+
 #content{
   margin-top: 30px;
     width: 85%;
@@ -37,6 +38,10 @@
     margin-left: 15px;
     cursor: pointer;
     outline: none;
+}
+.icon-btn img{
+  width: 30px;
+  height: 30px;
 }
 :root {
     --navbar-width: 256px;
@@ -93,6 +98,7 @@
     position:fixed;
     float: right;
     margin: auto;
+    align-items: center;
     right:0;
     top:60px;
     height: calc(100% - 60px);
@@ -267,6 +273,7 @@
       #nav-bar input[type="checkbox"] {
             width: 20px;
         }
+        
       }
 
 #profilelink{
