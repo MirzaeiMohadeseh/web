@@ -38,7 +38,7 @@ body::before {
   border-radius: 8px;
   padding: 30px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid #7d0dad;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   position: relative;
@@ -53,12 +53,12 @@ form {
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: black;
 }
 
 .input-field {
   position: relative;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid rgb(59, 9, 59);
   margin: 15px 0;
   text-align: right;
   direction: rtl;
@@ -69,7 +69,7 @@ h2 {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  color: #fff;
+  color:aliceblue;
   font-size: 16px;
   pointer-events: none;
   transition: 0.15s ease;
@@ -82,7 +82,7 @@ h2 {
   border: none;
   outline: none;
   font-size: 16px;
-  color: #fff;
+  color: rgb(77, 47, 83);
   text-align: right;
 }
 
@@ -98,11 +98,11 @@ h2 {
   align-items: center;
   justify-content: space-between;
   margin: 25px 0 35px 0;
-  color: #fff;
+  color:rgb(77, 47, 83);
 }
 
 #remember {
-  accent-color: #fff;
+  accent-color: rgb(77, 47, 83);
 }
 
 .forget label {
@@ -115,7 +115,7 @@ h2 {
 }
 
 .wrapper a {
-  color: #efefef;
+  color: rgb(77, 47, 83);
   text-decoration: none;
 }
 
@@ -125,7 +125,7 @@ h2 {
 
 button {
   background: linear-gradient(135deg, #a322bd, #6a0dad);
-  color: #fff;
+  color: lightpink;
   font-weight: 600;
   border: none;
   padding: 12px 20px;
@@ -155,7 +155,7 @@ button:hover {
 .register {
   text-align: center;
   margin-top: 30px;
-  color: #fff;
+  color: rgb(127, 71, 139);
 }
 
 #cir1 {
