@@ -26,7 +26,6 @@ html {
 * {
 	box-sizing: border-box;
 }
-
 .wrapper {
   direction: rtl;
 	margin: 0 auto;

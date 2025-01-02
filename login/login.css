@@ -160,8 +160,8 @@ button:hover {
 
 #cir1 {
   position: absolute;
-  top: 12%;
-  left: 8%;
+  top: 5%;
+  left: 5%;
   transform: translate(-50%, -50%);
   width: 120px;
   height: 120px;
