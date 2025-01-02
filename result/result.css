@@ -1,44 +1,111 @@
-.results-container {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+#content{
+    margin-left:50px;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; /* تنظیم سایدبار به سمت راست */
+    background-color: #00796b; /* آبی تیره برای سایدبار */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-.result-box {
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #004d40;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px; /* تنظیم دکمه بستن به سمت چپ */
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
     background-color: #00796b;
     color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.openbtn:hover {
+    background-color: #004d40;
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+    margin-right: 50px; /* فاصله پیش‌فرض محتوا از سمت راست */
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
     padding: 20px;
-    margin: 10px;
-    text-decoration: none;
-    text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    flex: 1 1 calc(33.333% - 20px); /* سه ستون در دسکتاپ */
-    max-width: calc(33.333% - 20px);
-    transition: background-color 0.3s;
+    width: 100%; /* عرض کامل */
 }
 
-.result-box:hover {
-    background-color: #004d40; /* تغییر رنگ هنگام هاور کردن */
+.card-img {
+    width: 10%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.result-box h3 {
-    margin: 0;
-    font-size: 24px;
+.card-title {
+    margin: 5px 0;
+    font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
-    .result-box {
-        flex: 1 1 calc(50% - 20px); /* دو ستون در تبلت */
-        max-width: calc(50% - 20px);
+.card-status1{
+    color: red;
+}
+.card-status2{
+    color: grey;
+}
+.card-status3{
+    color: green;
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 0; /* سایدبار بسته پیش‌فرض در حالت موبایل */
     }
-}
 
-@media screen and (max-width: 480px) {
-    .result-box {
-        flex: 1 1 100%; /* یک ستون در موبایل */
-        max-width: 100%;
+    .openbtn {
+        right: 10px;
+    }
+
+    #main {
+        margin-right: 0; /* عدم فاصله پیش‌فرض محتوا در حالت موبایل */
     }
 }

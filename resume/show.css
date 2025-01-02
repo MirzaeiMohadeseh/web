@@ -39,8 +39,6 @@ body{
 
 }
 .intro {
-
-	margin-top: 50px;
 	flex: 0 0 250px;
 	background-color: var(--color-gray-light-1);
 	box-shadow: 5px 0px 15px 0px #b3b3b3;
@@ -152,6 +150,9 @@ body{
 .detail-title {
 	display: flex;
 	align-items: center;
+}
+.detail-title span{
+	margin-right: 5px;
 }
 .detail-section > .detail-content {
 	padding: 1.5rem;

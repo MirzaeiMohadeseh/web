@@ -3,36 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../dashboard/dashboard.css">
+    <link rel="stylesheet" href="ads-all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- copilot -->
+    <title>وب سایت کاریابی</title>
+    <div id="header">
+    <div class="navbar-left">
+        <button class="icon-btn">🔔</button>
+        <button class="icon-btn"><a id="profilelink" href="../profile/profile.html">👤 محدثه میرزایی </a></button>
+    </div>
+    <div id="navbar-right">
+        <img src="../images/image.png">
+    </div>
+    </div>
+</div>
 </head>
 <body>
-    <div class="details-container"> 
+    <div id="wrap">
+        <div id="content">
+            <div class="main-container">
+                <div class="details-container">
+                    <img src="ads5.jpg" alt="Details Image">
+                    <b>عنوان شغلی: ادمین اینستاگرام</b>
+                    <p>شرکت درخواست دهنده: پیج شخصی</p>
+                    <p>مهارت های مورد نیاز: اشنایی با مباحث طراحی وب</p>
+                    <p>حقوق پیشنهادی: بازه 10-20 میلیون تومان</p>
+                    <p>مزایا همکاری: بیمه و افزایش  حقوق</p>
+                </div>
+                <div class="chat-container">
+                    <h4>چت با کارفرما</h4>
+                    <div class="chat-box" id="chatBox"></div>
+                    <input type="text" id="messageInput" placeholder="پیام خود را بنویسید...">
+                    <button onclick="sendMessage()">ارسال پیام</button>
+                </div>
+                <div class="resume-container">
+                    <h4>ارسال رزومه</h4>
+                    <form action="submit_resume.php" method="post" enctype="multipart/form-data">
+                        <label for="file">بارگذاری فایل رزومه:</label>
+                        <input type="file" id="file" name="file" required>
+                        <button type="submit">ارسال</button>
+                    </form>
+                </div>
+            </div>
         
-        <img src="ads5.jpg" alt="Details Image">
-         <b>عنوان شغلی: ادمین اینستاگرام</b>
-         <p>شرکت درخواست دهنده: پیج شخصی</p>
-         <p>مهارت های مورد نیاز: اشنایی با مباحث طراحی وب</p>
-         <p>حقوق پیشنهادی: بازه 10-20 میلیون تومان</p>
-         <p>مزایا همکاری: بیمه و افزایش  حقوق</p>
-     </div>
-     <div id="main"> 
-        <div class="job-post">
-           <button onclick="showForm()">ارسال رزومه</button>
-            <div id="resumeForm" class="form-container">
-               <form action="submit_resume.php" method="post" enctype="multipart/form-data"> 
-               <label for="name">نام:</label>
-               <input type="text" id="name" name="name" required> 
-               <label for="file">بارگذاری فایل رزومه:</label> 
-               <input type="file" id="file" name="file" required> 
-               <button type="submit">send</button>
-               </form> </div> </div> <div class="chat-container"> 
-               <h4>چت با کارفرما</h4>
-                   <div class="chat-box" id="chatBox"></div> 
-                       <input type="text" id="messageInput" placeholder="پیام خود را بنویسید...">
-                       <button onclick="sendMessage()">sendMessage</button>
-                   </div> 
-            </div> 
-       </div>
-   </div>
+        </div>
+        <div id="sidebar"> <!-- https://freefrontend.com/ -->
+            <div id="nav-bar"><input id="nav-toggle" type="checkbox" checked/>
+                <div id="nav-header">
+                    <a id="nav-title" target="_blank">وبسایت کاریابی</a><label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+                    <hr/>
+                </div>
+                <div id="nav-content">
+                    <a id="profilelink" href="../main/main.html"><div class="nav-button"><i class="fas fa-home"></i><span>صفحه اصلی</span></div></a>
+                    <a id="resumelink" href="../resume/resume.html"><div class="nav-button"><i class="fas fa-list"></i><span>رزومه</span></div></a>
+                    <a id="adslink" href="../ads/ads.html"><div class="nav-button"><i class="fas fa-calendar"></i><span>آگهی ها</span></div></a>
+                    <a id="resultlink" href="../result/result.html"><div class="nav-button"><i class="fas fa-eye"></i><span>نتایج</span></div></a>
+                    <hr/>
+                    <div class="nav-button"><i class="fas fa-arrow-circle-right"></i><span>خروج</span></div>
+                </div>
+            </div>
+    </div>
+    <script src="ads-all.js"></script>
 </body>
 </html>

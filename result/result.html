@@ -21,20 +21,31 @@
 <body>
     <div id="wrap">
         <div id="content">
-            <div class="results-container">
-                <a href="accepted.html" class="result-box">
-                    <h3>پذیرفته شده</h3>
-                </a>
-                <a href="pending.html" class="result-box">
-                    <h3>در انتظار بررسی</h3>
-                </a>
-                <a href="rejected.html" class="result-box">
-                    <h3>پذیرفته نشده</h3>
-                </a>
-            </div>   
+            <div id="main">
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="result1.jpg" alt="Image 1" class="card-img">
+                        <h3 class="card-title">شرکت intel</h3>
+                        <h3 class="card-title"> کارآموزی</h3>
+                        <h3 class="card-status1">وضعیت: پذیرفته نشده</h3>
+                    </div>
+                    <div class="card">
+                        <img src="result2.png" alt="Image 2" class="card-img">
+                        <h3 class="card-title">شرکت hp</h3>
+                        <h3 class="card-title">کارآموزی</h3>
+                        <h3 class="card-status2">وضعیت: در حال بررسی</h3>
+                    </div>
+                    <div class="card">
+                        <img src="result3.png" alt="Image 3" class="card-img">
+                        <h3 class="card-title">شرکت samsung</h3>
+                        <h3 class="card-title">کارآموزی</h3>
+                        <h3 class="card-status3">وضعیت: پذیرفته شده</h3>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="sidebar"> <!-- https://freefrontend.com/ -->
-            <div id="nav-bar"><input id="nav-toggle" type="checkbox"/>
+            <div id="nav-bar"><input id="nav-toggle" type="checkbox" checked/>
                 <div id="nav-header">
                     <a id="nav-title" target="_blank">وبسایت کاریابی</a><label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
                     <hr/>
