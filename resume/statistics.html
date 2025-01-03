@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="statistics.css">
+    <link rel="stylesheet" href="../dashboard/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>وب سایت کاریابی</title>
+    <div id="header">
+        <div class="navbar-left">
+            <button class="icon-btn"><img src="../images/icons8-bell.gif" alt="bell icon"></button>
+            <button class="icon-btn"><a id="profilelink" href="../profile/profile.html"><img src="../images/userpic.png" alt="Profile Picture"> محدثه میرزایی </a></button>
+        </div>
+        <div id="navbar-right">
+            <img src="../images/image.png">
+        </div>
+    </div>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+    <div class="container">
+        <h1>آمار ارسال رزومه</h1>
+        <canvas id="resumeChart"></canvas>
+        <div id="suggestions">
+            <h2>پیشنهادات بهبود شغل</h2>
+            <ul>
+                <li>ویژگی های مثبت خود را ذکر کنید.</li>
+                <li>.موفقیت های گذشته خود را بیان کنید</li>
+                <li>رزومه خود را برای مشاغل خاص تنظیم کنید.</li>
+            </ul>
+        </div>
+    </div>
+        </div>
+        <div id="sidebar">
+            <div id="nav-bar"><input id="nav-toggle" type="checkbox" checked/>
+                <div id="nav-header">
+                    <a id="nav-title" target="_blank">وبسایت کاریابی</a><label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+                    <hr/>
+                </div>
+                <div id="nav-content">
+                    <a id="profilelink" href="../main/main.html"><div class="nav-button"><i class="fas fa-home"></i><span>صفحه اصلی</span></div></a>
+                    <a id="resumelink" href="../resume/resume.html"><div class="nav-button"><i class="fas fa-list"></i><span>رزومه</span></div></a>
+                    <a id="adslink" href="../ads/ads.html"><div class="nav-button"><i class="fas fa-calendar"></i><span>آگهی ها</span></div></a>
+                    <a id="resultlink" href="../result/result.html"><div class="nav-button"><i class="fas fa-eye"></i><span>نتایج</span></div></a>
+                    <hr/>
+                    <div class="nav-button" id="logout-btn"><i class="fas fa-arrow-circle-right"></i><span>خروج</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../main/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="statistics.js"></script>
+</body>
+</html>

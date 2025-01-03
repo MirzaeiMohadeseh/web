@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dashboard/dashboardkarfarma.css">
+    <link rel="stylesheet" href="submit_ads.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>ثبت آگهی</title>
+    <div id="header">
+        <div class="navbar-left">
+            <button class="icon-btn"><img src="../images/icons8-bell.gif" alt="bell icon"></button>
+            <button class="icon-btn"><a id="profilelink" href="../karfarma/karfarma_profile.html"><img src="../images/hamrahaval.jpg" alt="Profile Picture"> همراه اول</a></button>
+        </div>
+        <div id="navbar-right">
+            <img src="../images/image.png">
+        </div>
+    </div>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+            <div id="main">
+                <div id="message" class="message"></div>
+                <div class="form-container">
+                    <h2>فرم ثبت آگهی</h2>
+                    <form action="submit_ad.php" method="post">
+                        <label for="jobTitle">عنوان شغلی:</label>
+                        <input type="text" id="jobTitle" name="jobTitle" required>
+                        
+                        <label for="companyName">شرکت درخواست دهنده:</label>
+                        <input type="text" id="companyName" name="companyName" required>
+                        
+                        <label for="skills">مهارت های مورد نیاز:</label>
+                        <input type="text" id="skills" name="skills" required>
+                        
+                        <label for="salary">حقوق پیشنهادی:</label>
+                        <input type="text" id="salary" name="salary" required>
+                        
+                        <label for="benefits">مزایا همکاری:</label>
+                        <input type="text" id="benefits" name="benefits" required>
+                        
+                        <button type="submit">ارسال آگهی</button>
+                    </form>
+                </div>
+        </div>
+        <div id="sidebar">
+            <div id="nav-bar"><input id="nav-toggle" type="checkbox" checked/>
+                <div id="nav-header">
+                    <a id="nav-title" target="_blank">وبسایت کاریابی</a><label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+                    <hr/>
+                </div>
+                <div id="nav-content">
+                    <a id="profilelink" href="../karfarma/karfarma_main.html"><div class="nav-button"><i class="fas fa-home"></i><span>صفحه اصلی</span></div></a>
+                    <a id="resumelink" href="../karfarma/submit_ads.html"><div class="nav-button"><i class="fas fa-list"></i><span>آگهی های من</span></div></a>
+                    <a id="adslink" href="../karfarma/show_ads.html"><div class="nav-button"><i class="fas fa-calendar"></i><span>رزومه های دریافت شده</span></div></a>
+                    <hr/>
+                    <div class="nav-button" id="logout-btn"><i class="fas fa-arrow-circle-right"></i><span>خروج</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../main/main.js"></script>
+    <script src="submit_ads.js"></script>
+</body>
+</html>

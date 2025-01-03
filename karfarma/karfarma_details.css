@@ -1,0 +1,31 @@
+.employer-container {
+    margin: 150px 150px 200px 300px;
+    font-family: "Lato", sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.company-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.company-name {
+    font-family: "Lato", sans-serif;
+    margin: 10px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.company-info {
+    font-family: "Lato", sans-serif;
+    margin: 10px 0;
+    font-size: 18px;
+}

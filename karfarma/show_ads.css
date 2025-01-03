@@ -1,0 +1,75 @@
+.resume-container {
+    margin-top: 100px;
+    margin-left: 30px;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.resume-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 45%; /* عرض 45 درصد برای دو کارت در کنار هم */
+}
+
+.resume-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.resume-name {
+    font-family: "Lato", sans-serif;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.resume-education {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.decision-form {
+    margin-top: 20px;
+}
+
+.decision-form label {
+    font-family: "Lato", sans-serif;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.decision-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.decision-form button:hover {
+    background-color: #004d40;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-card {
+        width: 80%; /* در حالت موبایل عرض 80 درصد */
+        margin-bottom: 20px;
+    }
+}
